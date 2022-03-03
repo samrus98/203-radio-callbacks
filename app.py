@@ -36,9 +36,7 @@ app.layout = html.Div([
                      {"label": "2016", "value": 2016},
                      {"label": "2017", "value": 2017},
                      {"label": "2018", "value": 2018}],
-                 multi=False,
                  value=2015,
-                 style={'width': "40%"}
                  ),
 
     html.Div(id='output_container', children=[]),
