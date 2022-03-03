@@ -5,7 +5,9 @@ import dash
 from dash import Dash, dcc, html, Input, Output  # pip install dash (version 2.0.0 or higher)
 
 
-
+########### Define your variables ######
+sourceurl = 'https://github.com/Coding-with-Adam/Dash-by-Plotly/blob/master/Other/Dash_Introduction/intro.py'
+githublink = 'https://github.com/plotly-dash-apps/203-radio-callbacks'
 
 
 app = Dash(__name__)
