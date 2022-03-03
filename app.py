@@ -17,6 +17,12 @@ df = df.groupby(['State', 'ANSI', 'Affected by', 'Year', 'state_code'])[['Pct of
 df.reset_index(inplace=True)
 print(df[:5])
 
+########### Initiate the app
+external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
+app.title="Bee Map"
+
 # ------------------------------------------------------------------------------
 # App layout
 app.layout = html.Div([
