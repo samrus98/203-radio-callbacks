@@ -30,7 +30,7 @@ app.layout = html.Div([
 
     html.H1("Web Application Dashboards with Dash", style={'text-align': 'center'}),
 
-    dcc.Dropdown(id="slct_year",
+    dcc.RadioItems(id="slct_year",
                  options=[
                      {"label": "2015", "value": 2015},
                      {"label": "2016", "value": 2016},
@@ -45,7 +45,10 @@ app.layout = html.Div([
     html.Br(),
 
     dcc.Graph(id='my_bee_map', figure={})
-
+    html.Br(),
+    html.A('Code on Github', href=githublink),
+    html.Br(),
+    html.A("Data Source", href=sourceurl),
 ])
 
 
